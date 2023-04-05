@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="font: italic; font-size: 25px;">
+      Prueba de Agregar LocalStorage
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"  style="background-color: aquamarine;">
+  <ion-header collapse="condense" style="background-color: aquamarine;">
+    <ion-toolbar>
+      <ion-title size="large" style="font: italic;">
+        Testing - Add LocalStorage
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" style="background-color: aqua;">
+    <ion-label style="font: sans; font-size: 20px;">{{recovertext}}</ion-label>
+    <input type="text" [(ngModel)]="receivetext">
+    <button (click)="print()" style="color: blue; font-size: 30px;">Enviar</button>
+    <ion-img src="https://icons.veryicon.com/png/o/internet--web/iview-3-x-icons/logo-ionic.png" style="width: 15%; height: 25%; margin-left: 600px;;;"></ion-img>
+  </div>
+</ion-content>
+
+
